@@ -174,14 +174,17 @@ $(function () {
   });
 
 
-  // $('.grid').masonry({
-  //   itemSelector: '.grid-item',
-  //   columnWidth: 200
-  // });
-
-  // $('.grid').masonry({
-  //   itemSelector: '.grid-item'
-  // });
-
+  $('#container').imagesLoaded( function() {
+    // images have loaded
+  });
+  
+  // options
+  $('#container').imagesLoaded( {
+    // options...
+    },
+    function() {
+      // images have loaded
+    }
+  );
 
 });

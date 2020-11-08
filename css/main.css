@@ -700,8 +700,7 @@ footer {
   transition: all .2s;
 }
 
-
-/* .grid {
+.grid {
   margin-bottom: 1.6em;
 }
 .grid-item {
@@ -710,7 +709,7 @@ footer {
 .grid-item img {
   margin: 0;
   vertical-align: bottom;
-} */
+}
 
 
 
