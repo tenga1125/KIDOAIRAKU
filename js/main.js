@@ -176,16 +176,20 @@ $(function () {
 
 
 
-});
+  $('#container').imagesLoaded( function() {
+    // images have loaded
+  });
+  
+  // options
+  $('#container').imagesLoaded( {
+    // options...
+    },
+    function() {
+      // images have loaded
+    }
+  );
 
 
 
 
-// Masonry初期化
-var $grid = $('.grid').masonry({
-  // ここにオプションを記述
-});
-// それぞれの画像が読み込まれるごとにMasonryを動作させる
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
 });
