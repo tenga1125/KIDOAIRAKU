@@ -18,13 +18,16 @@
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <!-- imagesLoaded -->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- Masonry.js -->
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+
   <!-- jQuery UI CDN  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!-- jQuery -->
   <script src="js/main.js"></script>
 
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  
   <!-- minimasonry.js -->
   <script src="js/minimasonry.min.js"></script>
 
@@ -124,7 +127,7 @@
 
 
             <div id="lightgallery" class="masonry">
-              <!-- draw -->
+
                 <a href="img/draw/draw1.png" class="item grid">
                   <img src="img/draw/draw1.png" alt="" width="100%" height="auto">
                 </a>
@@ -199,7 +202,6 @@
                 </a>
 
 
-                <!-- illust -->
                 <a href="img/draw/illust16.png" class="item">
                   <img src="img/draw/illust16.png" alt="" width="100%" height="auto">
                 </a>
@@ -252,33 +254,35 @@
 
 
 
-            <!-- <div class="grid">
-              <div class="grid-item">
-                <a href="img/draw/draw1.png" class="item">
-                  <img src="img/draw/draw1.png" alt="" width="100%" height="auto">
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="img/draw/draw2.png" class="item">
-                  <img src="img/draw/draw2.png" alt="" width="100%" height="auto">
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="img/draw/draw26.png" class="item">
-                  <img src="img/draw/draw26.png" alt="" width="100%" height="auto">
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="img/draw/draw5.png" class="item">
-                  <img src="img/draw/draw5.png" alt="" width="100%" height="auto">
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="img/draw/draw6.png" class="item">
-                  <img src="img/draw/draw6.png" alt="" width="100%" height="auto">
-                </a>
-              </div>
+            <!-- <div class="grid masonry">
+              <a href="img/draw/draw1.png" class="item grid-item">
+                <img src="img/draw/draw1.png" alt="" width="100%" height="auto">
+              </a>
+              <a href="img/draw/draw2.png" class="item grid-item">
+                <img src="img/draw/draw2.png" alt="" width="100%" height="auto">
+              </a>
+              <a href="img/draw/draw26.png" class="item grid-item">
+                <img src="img/draw/draw26.png" alt="" width="100%" height="auto">
+              </a>
+              <a href="img/draw/draw5.png" class="item grid-item">
+                <img src="img/draw/draw5.png" alt="" width="100%" height="auto">
+              </a>
+              <a href="img/draw/draw6.png" class="item grid-item">
+                <img src="img/draw/draw6.png" alt="" width="100%" height="auto">
+              </a>
+              <a href="img/draw/draw19.png" class="item grid-item">
+                <img src="img/draw/draw19.png" alt="" width="100%" height="auto">
+              </a>
             </div> -->
+
+            <!-- minmasonry.js  -->
+            <script>
+              var exampleDefault = new MiniMasonry({
+                container: '.masonry',
+                baseWidth: 260,
+                gutter: 10,
+              });
+            </script>
 
 
           </div>
@@ -310,15 +314,6 @@
   <script src="js/lightgallery.min.js"></script>
   <script type="text/javascript">
     lightGallery(document.getElementById('lightgallery')); 
-  </script>
-
-  <!-- minmasonry.js  -->
-  <script>
-    var exampleDefault = new MiniMasonry({
-      container: '.masonry',
-      baseWidth: 260,
-      gutter: 10,
-    });
   </script>
 
 </body>
