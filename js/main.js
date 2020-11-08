@@ -179,18 +179,13 @@ $(function () {
 });
 
 
-// window.onload = function(){
-//   document.getElementById('caption').classList.add('is-show');
-// }
 
 
-// $('head').append(
-//   '<style>.fade{display:none;}'
-//   );
-// jQuery(document).ready(function($) {
-//   if (window.matchMedia( '(min-width: 1024px)' ).matches) {
-//   $(".fade").css('opacity',1).delay(500).fadeIn(1000);
-//   } else {
-//   $(".fade").css('opacity',0);
-//   };
-// });
+// Masonry初期化
+var $grid = $('.grid').masonry({
+  // ここにオプションを記述
+});
+// それぞれの画像が読み込まれるごとにMasonryを動作させる
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
