@@ -1,0 +1,885 @@
+@media screen and (min-width:1366px) {
+  .vh100 {
+    height: auto;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .hamburger, .hamburger span {
+    display: none;
+  }
+  .caption {
+    opacity: 0;
+  }
+  .caption .eigo {
+    font-size: 0px;
+    margin: 0;
+  }
+}
+
+
+/* 960〜1024pxに適用されるCSS（iPad pro用） */
+@media screen and (min-width:960px) and ( max-width:1024px) {
+
+  header {
+    display: none;
+  }
+  .center-title {
+    display: inline;
+    z-index: 100;
+  }
+  .center-title h3 {
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 99;
+    color: #FFF;
+    background-color: #000000;
+    font-size: 1.5em;
+    font-weight: 500;
+    white-space: nowrap;
+    border: solid 2px rgb(250, 250, 250);
+    padding: 3px 9px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: fixed;
+  }
+  .center-title h3:hover {
+    background-color: #fff;
+    border-color: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+
+  header .side .mini-title {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .main-wrp {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 100px 114px 0;
+    max-width: 1200px;
+  }
+  .portforio-content {
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 80px;
+    padding: 0 ;
+  }
+  .syosai-right {
+    padding-left: 30px;
+  }
+
+
+  .portforio .vh100 {
+    height: auto;
+  }
+  .content {
+    margin-top: 170px;
+  }
+  .portforio-content .left {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .flow-content {
+    margin: 15px 0;
+    padding: 0 10px 0 20px;
+  }
+  .sitemap img {
+    width: 85%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .ps-m {
+    margin: 160px 0;
+  }
+  .other-portfolio {
+    margin: 0 0;
+    padding: 30px 100px;
+    text-align: center;
+  }
+  .f12 {
+    font-size: 13px;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-right: 0px;
+  }
+  .left-img img {
+    width: 90%;
+  }
+  .portforio-content .left, .portforio-content .right, .seisaku-flow .left, .seisaku-flow .right {
+    width: 50%;
+    height: auto;
+  }
+
+  .portforio-content .right {
+    padding: 15px 0 0 40px;
+  }
+
+
+
+  /* ハンバーガーボタン */
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 40px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 40px;
+    height  : 2px ;
+    left    : 6px;
+    background : #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #000;
+    /* background: #fff; */
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+  }
+  nav.globalMenuSp ul {
+    background: #333;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30%;
+    width: 100%;
+    height: 100vh;
+  }
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #ddd;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 30px;
+    font-weight: 100;
+    transition: all 0.4s;
+  }
+  .side-nav ul li a p {
+    font-size: 30px;
+  }
+  .side-nav ul li .current {
+    width: 20%;
+    border-bottom: solid 1px #fff;
+  }
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    transform: translateY(0%);
+  }
+
+
+
+
+
+  .caption {
+    letter-spacing: 5px;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 2%;
+    margin: 0px 0 120px 0;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 1.5s;
+    font-weight: bolder;
+  }
+  .caption.yokoin {
+    opacity: 1;
+    transform: translate(0);
+    transition-delay: 1s;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    line-height: 43px;
+    font-weight: lighter;
+  }
+  .caption p {
+    margin: 0;
+  }
+
+  /* .tool {
+    margin-top: 50px;
+  } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 960px以下に適用されるCSS（iPad用） */
+@media screen and (max-width:960px) {
+
+  header {
+    display: none;
+  }
+  .center-title {
+    display: inline;
+    z-index: 100;
+  }
+  .center-title h3 {
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 99;
+    color: #FFF;
+    background-color: #000000;
+    font-size: 1.2em;
+    font-weight: 500;
+    white-space: nowrap;
+    border: solid 2px rgb(250, 250, 250);
+    padding: 3px 9px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: fixed;
+  }
+  .center-title h3:hover {
+    background-color: #fff;
+    border-color: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+
+  header .side .mini-title {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .main-wrp {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 40px 40px 0;
+    max-width: 1200px;
+  }
+
+  .portforio-content {
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 80px;
+    padding: 0 0px;
+  }
+
+
+  .portforio .vh100 {
+    height: auto;
+  }
+  .content {
+    margin-top: 170px;
+  }
+  .portforio-content .left {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .flow-content {
+    margin: 15px 0;
+    padding: 0 10px 0 20px;
+  }
+  .sitemap img {
+    width: 85%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .ps-m {
+    margin: 160px 0;
+  }
+  .other-portfolio {
+    margin: 0 0;
+    padding: 0px 100px;
+    text-align: center;
+  }
+  .f14 {
+    font-size: 14px;
+    padding-left: 0px;
+    margin: 7px 0 0 0;
+    font-weight: 600;
+  }
+  .f12 {
+    font-size: 13px;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+  .left-img img {
+    width: 90%;
+  }
+  .portforio-content .left, .portforio-content .right, .seisaku-flow .left, .seisaku-flow .right {
+    width: 50%;
+    height: auto;
+  }
+
+  .portforio-content .right {
+    padding: 0 0 0 30px;
+  }
+  .syosai-right {
+    padding-left: 30px;
+  }
+
+  /* .syosai-left p {
+    margin: 30px 0;
+  } */
+  .tool {
+    margin-top: 50px;
+  }
+
+  .indent {
+    padding-left: 0.5em;
+    text-indent: -1.5em;
+    margin-left: 0px;
+  }
+
+
+
+
+  /* ハンバーガーボタン */
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  /* .hamburger:active .swiper-pagination {
+    display: none;
+  } */
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 35px;
+    height  : 2px ;
+    left    : 6px;
+    background : #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #000;
+    /* background: #fff; */
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul {
+    background: #333;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30%;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #ddd;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 30px;
+    font-weight: 100;
+    transition: all 0.4s;
+  }
+  .side-nav ul li a p {
+    font-size: 30px;
+  }
+  .side-nav ul li .current {
+    width: 20%;
+    border-bottom: solid 1px #fff;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    transform: translateY(0%);
+  }
+
+
+  .caption {
+    letter-spacing: 5px;
+    border-bottom:  1px solid #dddddd;
+    padding-left: 2%;
+    margin: 25px 0 100px 0;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 1.5s;
+    font-weight: bolder;
+  }
+  .caption.yokoin {
+    opacity: 1;
+    transform: translate(0);
+    transition-delay: 1s;
+  }
+  .caption p {
+    margin: 0;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    line-height: 43px;
+    font-weight: lighter;
+  }
+
+
+
+  .portforio .subtitle h3 {
+    /* font-weight: 300; */
+    margin: 60px auto 0px;
+    font-size: 30px;
+    color: #ebebeb;
+    letter-spacing: 2px;
+    /* text-decoration: underline; */
+    font-weight: normal;
+    letter-spacing: 4px;
+  }
+}
+
+
+
+@media screen and (max-width: 680px) {
+  .tool {
+    margin-top: 20px;
+  }
+  .caption {
+    text-align: center;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 0%;
+    margin: 25px 0 80px 0;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 1.5s;
+    }
+    .caption .eigo {
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 37px;
+      line-height: 38px;
+      font-weight: lighter;
+    }
+    .contact-caption, .draw-caption {
+      margin: 25px 0 50px 0;
+    }
+    .portforio .subtitle h3 {
+      margin: 0 auto 30px;
+      font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 400px以下に適用されるCSS（small_iPhone用） */
+@media screen and (max-width: 480px) {
+  .center-title h3 {
+    top: 25px;
+  }
+  .portforio .subtitle h3 {
+    margin: 20px auto 0;
+  }
+  .main-wrp {
+    margin-bottom: 100px;
+  }
+  .main-wrp {
+    margin-top: 100px;
+    padding: 20px 25px 0;
+    max-width: 1200px;
+  }
+
+
+  .subtitle h2 {
+    margin: 30px auto;
+    font-size: 35px;
+  }
+  .slider-content {
+    margin: 40px 0 10px;
+  }
+  .slider .slider-li img {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .content {
+    margin-top: 120px;
+  }
+  .portfolio-section .sub-title {
+    text-align: center;
+    margin: 0;
+  }
+  .portfolio-section .sub-title h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    white-space: nowrap
+  }
+  .portfolio-section .sub-title .detail-title {
+    margin-bottom: 40px;
+  }
+  .portforio-content {
+    display: block;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  .portforio-content .left, .portforio-content .right, .seisaku-flow .left, .seisaku-flow .right {
+    width: 100%;
+    height: auto;
+  }
+  .portforio-content .right {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .syosai {
+    display: flex;
+    line-height: 1;
+  }
+  .syosai-left {
+    width: 40%;
+  }
+  p {
+    font-family: YuGothic,'Yu Gothic',sans-serif;
+    font-size: 13px;
+    margin: 20px 0;
+    font-weight: 100;
+  }
+  .tool {
+    margin-top: 20px;
+  }
+  .syosai-right {
+    width: 60%;
+    padding-left: 20px;
+  }
+  .ps-m {
+    margin: 90px 0;
+  }
+  .flow-content {
+    margin: 15px 0 30px;
+    padding: 0 10px 0 20px;
+  }
+  .seisaku-flow {
+    display: block;
+    width: 100%;
+    margin: 40px auto;
+  }
+  .flow h4 {
+    margin-top: 0;
+  }
+  .kaigyo {
+    display: inline;
+  }
+  .flow-sent {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  .f14 {
+    font-size: 14px;
+    padding-left: 0px;
+    margin: 7px 0 0 0;
+    font-weight: 600;
+  }
+  .f12 {
+    font-size: 13px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .sitemap img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  .sitemap {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .other-portfolio h4 {
+    margin: 0 auto 40px auto;
+  }
+  .others {
+    display: block;
+  }
+  .other {
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  .other img {
+    width: 100%;
+    height: auto;
+  }
+  .other-portfolio {
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
+  }
+  .mt-space50 {
+    margin-top: 0px;
+  }
+
+  /* footer {
+    width: 100vw;
+    float: none;
+    text-align: center;
+    padding-bottom: 10px;
+    height: auto;
+  } */
+  footer {
+    width: 100vw;
+    float: none;
+    text-align: center;
+    /* padding-bottom: 10px; */
+    height: auto;
+  }
+  .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+  }
+  /* .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+  } */
+
+  .url {
+    font-size: 9px;
+    color: #fff;
+  }
+
+  .tiny-flow {
+    margin-bottom: 0px;
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  .center-title h3 {
+    font-size: 1.0em;
+    font-weight: 400;
+  }
+  .kaigyo_true {
+    display: inline-block;
+  }
+  .article-wrp {
+    display: block;
+  }
+  .article-left {
+    width: 100%;
+    height: auto;
+  }
+  .article-right {
+    width: 100%;
+    height: auto;
+  }
+  .caption {
+    margin: 20px 0 50px 0;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    line-height: 38px;
+    font-weight: lighter;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 25px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .url {
+    font-size: 5px;
+    color: #fff;
+  }
+}
+
+
+/* @media screen and (min-width:1023px) {
+  .caption, .caption p, .hamburger, .hamburger span {
+    display: none;
+  }
+} */

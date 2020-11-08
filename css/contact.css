@@ -1,0 +1,198 @@
+/* .vh100 {
+  height: 100vh;
+} */
+/* .contact-main {
+  height: 100vh;
+} */
+form {
+  margin: 50px 0 140px 0;
+}
+.wrap_tbl {
+  margin: 0 auto;
+  width: 680px;
+}
+.wrap_tbl dl {
+  overflow: hidden;
+}
+.wrap_tbl dt {
+  clear: left;
+  float: left;
+  width: 100px;
+}
+.wrap_tbl dt, .wrap_tbl dd {
+  /* font-family: 'Apple Symbols',sans-serif; */
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+.wrap_tbl dt, .wrap_tbl dd {
+  color: rgb(228, 228, 228);
+  letter-spacing: 3px;
+  line-height: 1.6em;
+  padding-bottom: 15px;
+}
+.wrap_tbl dd {
+  margin-left: 100px;
+  width: 580px;
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+  font-size: 17px;
+  height: 42px;
+  letter-spacing: 3px;
+  padding: 6px 10px;
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+  background-color: #575a61;
+  border: 0 solid #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  line-height: normal;
+  /* -webkit-text-size-adjust: 100%; */
+  vertical-align: middle;
+  width: 100%;
+}
+textarea {
+  font-size: 12px;
+  height: 231px;
+  letter-spacing: 2px;
+  padding: 6px 10px;
+}
+textarea {
+  background-color: #575a61;
+  border: 0 solid #000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  line-height: 1.4em;
+  margin: 0;
+  width: 100%;
+}
+.ex {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 1.7em;
+  padding-top: 15px;
+  width: 70%;
+  margin: 0 auto;
+}
+.wrap_tbl .dd_btn {
+  position: relative;
+}
+.wrap_tbl .dd_btn {
+  text-align: right;
+  padding-bottom: 0;
+}
+.wrap_tbl .dd_btn .btn_send {
+  /* bottom: 5px; */
+  position: absolute;
+  right: 0;
+}
+button, input[type="button"], input[type="submit"], .btn_base {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0 solid #000;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lato", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  letter-spacing: 3px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+button, input[type="button"], input[type="submit"], .btn_base {
+  border-bottom: 7px solid #575a61;
+  font-size: 20px;
+  height: 40px;
+  line-height: 30px;
+  width: 120px;
+}
+.dd_btn:hover {
+  opacity: 0.5;
+}
+
+
+
+
+form.cmxform label.error, label.error {
+  color: #ff2a2a;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
+@media screen and ( max-width:1024px) {
+  .ex {
+    width: auto;
+  }
+  /* .copyright{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  } */
+  .copyright {
+    width: 40%;
+    margin: 0;
+    /* padding-right: 15px; */
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+  }
+  form {
+    margin: 50px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  form {
+    margin: 0 0 50px 0;
+  }
+  .wrap_tbl dl {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .copyright{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+
+

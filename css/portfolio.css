@@ -1,0 +1,276 @@
+body {
+  letter-spacing: 1.1px;
+}
+.wrap {
+  overflow: hidden;
+}
+p {
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+  font-weight: 100;
+}
+.portforio .subtitle h3{
+  margin: 10px 0 0 0;
+  font-weight: 300;
+  font-size: 25px;
+  color: rgb(245, 245, 245);
+  letter-spacing: 3px;
+}
+.vh100 {
+  height: 100vh;
+}
+.slider-content {
+  margin: 30px 0 20px;
+  position: relative;
+  vertical-align: middle;
+}
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.slider {
+  margin: 0 auto;
+  padding: 0px;
+  vertical-align: middle;
+}
+.slider .slider-li {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  vertical-align: middle;
+
+}
+.slider .slider-li img {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+}
+.swiper-pagination {
+  font-size: 14px;
+  color: rgb(245, 245, 245);
+}
+.swiper-parent {
+	position: relative;
+}
+
+
+
+
+.content {
+  margin-top: 100px;
+}
+.portfolio-section {
+  margin: 0;
+}
+.ps-m {
+  margin: 200px 0 200px 0;
+}
+.portfolio-section .sub-title {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.portfolio-section .sub-title h3 {
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin: 0 60px 0;
+  margin-bottom: 65px;
+}
+.portfolio-section .sub-title .detail-title {
+  margin-bottom: 80px;
+}
+.portforio-content {
+  display: flex;
+}
+.portforio-content .left, .portforio-content .right, .seisaku-flow .left, .seisaku-flow .right {
+  width: 50%;
+  height: auto;
+}
+.portforio-content .left {
+  text-align: center;
+}
+
+.portforio-content .right {
+  padding: 0 0 0 40px;
+}
+.left-img img {
+  width: 80%;
+}
+.syosai {
+  display: flex;
+  line-height: 2;
+}
+.syosai-left p {
+  font-weight: 600;
+}
+.syosai-right {
+  padding-left: 40px;
+}
+.url {
+  font-size: 12px;
+  color: #fff;
+}
+.left-img span::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgb(240, 240, 240);
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+.left-img:hover::after {
+  transform: scale(1, 1);
+}
+
+
+
+
+
+
+span {
+  display: inline-block;
+}
+.seisaku-flow {
+  display: flex;
+  margin: 40px 0 50px 0;
+}
+.flow h4 {
+  font-weight: 600;
+}
+.flow-content {
+  margin: 15px 0;
+  padding: 0 40px 0 20px;
+}
+.flow-sent {
+  margin-bottom: 23px;
+  line-height: 1.5;
+}
+.f12 li {
+  list-style-type: none;
+  line-height: 2.2;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+.f14 {
+  font-size: 14px;
+  padding-left: 20px;
+  margin: 7px 0 0 0;
+  font-weight: 600;
+}
+.f12 {
+  font-size: 13px;
+  margin-top: 0;
+  padding-left: 35px;
+  padding-right: 0px;
+}
+
+.sitemap {
+  text-align: left;
+}
+.sitemap img {
+  width: 95%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.article-wrp {
+  display: flex;
+}
+.article-left {
+  width: 32%;
+  height: auto;
+}
+.article-right {
+  width: 68%;
+  height: auto;
+}
+.indent {
+  padding-left:1em;
+  text-indent:-1.5em;
+  margin-left: 7px;
+}
+.mt-space50 {
+  margin-top: 65px;
+}
+.mt-space10 {
+  margin-top: 25px;
+}
+
+.line-h-1 li {
+  line-height: 1.9;
+}
+
+
+
+.other-portfolio {
+  margin: 160px 0 200px;
+  padding: 50px 100px 80px;
+  text-align: center;
+  /* border: solid .5px #fff; */
+}
+.other-portfolio h4 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0 auto 50px auto;
+  padding-bottom: 10px;
+  border-bottom: solid .5px #fff;
+}
+.others {
+  display: flex;
+}
+.other {
+  width: 50%;
+}
+/* .bg-f {
+  width: 180px;
+  height: auto;
+  background-color: #fff;
+} */
+.other a {
+  text-decoration: none;
+  color: #fff;
+}
+.other img {
+  width: 180px;
+  height: auto;
+  transition: .2s ease-in-out;
+}
+.other img:hover {
+  filter: opacity(45%);
+  transition: all .2s;
+}
+.other p {
+  margin: 0;
+  padding: 0;
+}
+.f11 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.url {
+  color: #57ad90;
+}
+.tiny-flow {
+  margin-bottom: 90px;
+}
+.huge-flow {
+  width: 100%;
+}
+.rough-design {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.rough-design img {
+  width: 95%;
+  height: auto;
+}

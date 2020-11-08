@@ -1,0 +1,1041 @@
+@media screen and (min-width:1024px) {
+  .hamburger, .hamburger span {
+    display: none;
+  }
+  .caption {
+    opacity: 0;
+  }
+  .caption .eigo {
+    margin: 0;
+  }
+  .subtitle h2 {
+    margin: 0 auto 50px;
+  }
+}
+
+/* 960〜1024pxに適用されるCSS（iPad pro用） */
+  @media screen and (min-width:960px) and ( max-width:1024px) {
+
+  header {
+    display: none;
+  }
+  .center-title {
+    display: inline;
+    z-index: 100;
+  }
+  .center-title h3 {
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 99;
+    color: #FFF;
+    background-color: #121212;;
+    font-size: 1.5em;
+    font-weight: 500;
+    white-space: nowrap;
+    border: solid 2px rgb(250, 250, 250);
+    padding: 3px 9px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: fixed;
+  }
+  .center-title h3:hover {
+    background-color: #fff;
+    border-color: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+
+  header .side .mini-title {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .main-wrp {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 100px 114px 0;
+    max-width: 1200px;
+  }
+
+  /* .caption {
+    display: none;
+  } */
+  /* .hamburger span {
+    display: none;
+  } */
+
+
+  /* ハンバーガーボタン */
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 40px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 40px;
+    height  : 2px ;
+    left    : 6px;
+    background : #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #000;
+    /* background: #fff; */
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+  }
+  nav.globalMenuSp ul {
+    background: #333;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30%;
+    width: 100%;
+    height: 100vh;
+  }
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #ddd;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 50px;
+    font-weight: 100;
+    transition: all 0.4s;
+  }
+  .side-nav ul li a p {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .side-nav ul li .current {
+    width: 20%;
+    border-bottom: solid 1px #fff;
+  }
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    transform: translateY(0%);
+  }
+
+  .caption {
+    letter-spacing: 5px;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 2%;
+    margin: 0px 0 120px 0;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 1.5s;
+    font-weight: bolder;
+  }
+  .caption.yokoin {
+    opacity: 1;
+    transform: translate(0);
+    transition-delay: 1s;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    line-height: 43px;
+    font-weight: lighter;
+  }
+  .caption p {
+    margin: 0;
+  }
+
+
+
+
+  .profile-wrp, .skill-wrp {
+    height: auto;
+    margin-bottom: 200px;
+  }
+  .myphoto {
+    margin: 80px 55px;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 250px;
+  }
+  .subtitle h2 {
+    font-weight: 100;
+    margin: 20px auto;
+    font-size: 40px;
+    color: rgb(250, 250, 250);
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  .subtitle h2 {
+    margin: 60px auto 40px;
+    font-size: 40px;
+    color: #ebebeb;
+    letter-spacing: 2px;
+    font-weight: normal;
+    letter-spacing: 4px;
+  }
+
+  .subtitle .website {
+    margin: 0 auto 70px;
+  }
+  .portforio-content-wrp {
+    /* display: block; */
+    margin-bottom: 0px;
+  }
+  .portforio-content {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 80px;
+  }
+  .portfolio-2line {
+    width: 50%;
+    margin-bottom: 80px;
+    margin: 0;
+  }
+
+  .wrap_tbl dd {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .wrap_tbl dt, .wrap_tbl dd {
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+  input[type="text"], input[type="tel"], input[type="email"] {
+    font-size: 23px;
+    height: 60px;
+  }
+  textarea {
+    font-size: 20px;
+    height: 300px;
+  }
+
+  .contact-cr {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+  }
+  form.cmxform label.error, label.error {
+    font-size: 15px;
+  }
+  .wrap_tbl dd .ex {
+    font-size: 12px;
+  }
+  button, input[type="button"], input[type="submit"], .btn_base {
+    border-bottom: 7px solid #575a61;
+    font-size: 25px;
+  }
+
+  .lg-outer .lg-image {
+    max-width: 75%;
+    max-height: 80%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 960以下に適用されるCSS（iPad 用） */
+@media screen and (max-width: 960px) {
+
+  header {
+    display: none;
+  }
+  .center-title {
+    display: inline;
+    z-index: 100;
+  }
+  .center-title h3 {
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 99;
+    color: #FFF;
+    background-color: #121212;
+    font-size: 1.2em;
+    font-weight: 500;
+    white-space: nowrap;
+    border: solid 2px rgb(250, 250, 250);
+    padding: 3px 9px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: fixed;
+  }
+  .center-title h3:hover {
+    background-color: #fff;
+    border-color: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+  /* .center-title p {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    color: #FFF;
+    position: fixed;
+  } */
+
+  header .side .mini-title {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+  .main-wrp {
+    margin-top: 100px;
+    padding: 40px 40px 0;
+    max-width: 1200px;
+  }
+
+  .caption {
+    letter-spacing: 5px;
+    border-bottom:  1px solid #dddddd;
+    padding-left: 2%;
+    margin: 30px 0 120px 0;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 1.5s;
+    font-weight: bolder;
+  }
+  .caption.yokoin {
+    opacity: 1;
+    transform: translate(0);
+    transition-delay: 1s;
+  }
+  .caption p {
+    margin: 0;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    line-height: 43px;
+    font-weight: lighter;
+  }
+  /* .caption .kanji {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 100;
+  } */
+  .contact-caption, .draw-caption {
+    margin: 10px 0 70px 0;
+  }
+
+  .sentence p {
+    font-size: 13px;
+    /* margin: 0; */
+  }
+
+  .profile-wrp, .skill-wrp {
+    height: auto;
+    margin-bottom: 130px;
+    margin-top: 100px;
+  }
+  .skill-wrp {
+    margin-top: 200px;
+  }
+  .profile-content .name h3 {
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    color: #ebebeb;
+  }
+  .pr-wrp {
+    margin-bottom: 150px;
+    margin-top: 210px;
+  }
+  .myphoto {
+    margin: 60px 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .myphoto img {
+    width: 85%;
+  }
+  .subtitle h2 {
+    /* font-weight: 300; */
+    margin: 60px auto 40px;
+    font-size: 32px;
+    color: #ebebeb;
+    letter-spacing: 2px;
+    /* text-decoration: underline; */
+    font-weight: normal;
+    letter-spacing: 4px;
+  }
+  .skill .subtitle h2 {
+    margin-bottom: 40px;
+  }
+  section .self-pr .subtitle h2 {
+    margin-bottom: 50px;
+  }
+
+  .subtitle .website {
+    margin-bottom: 50px;
+  }
+  .portforio-content-wrp {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .portforio-content {
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 80px;
+  }
+
+  .vision {
+    width: 85%;
+  }
+  .f14 {
+    margin: 0;
+    /* padding-left: 10px; */
+  }
+
+
+  .masonry {
+    position: relative;
+    margin: 40px 0 150px 0;
+  }
+
+  /* form {
+    margin: 0;
+  } */
+  .wrap_tbl dd {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .wrap_tbl dt, .wrap_tbl dd {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  input[type="text"], input[type="tel"], input[type="email"] {
+    font-size: 20px;
+    height: 40px;
+  }
+  textarea {
+    font-size: 18px;
+    height: 220px;
+  }
+
+  .contact-cr {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+  }
+  form.cmxform label.error, label.error {
+    font-size: 13px;
+  }
+  .wrap_tbl dd .ex {
+    font-size: 12px;
+  }
+  button, input[type="button"], input[type="submit"], .btn_base {
+    border-bottom: 7px solid #575a61;
+    font-size: 23px;
+  }
+
+  .lg-outer .lg-image {
+    max-width: 75%;
+    max-height: 80%;
+  }
+
+
+  /* ハンバーガーボタン */
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 35px;
+    height  : 2px ;
+    left    : 6px;
+    background : #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #000;
+    /* background: #fff; */
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul {
+    background: #333;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30%;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #ddd;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 40px;
+    font-weight: 100;
+    transition: all 0.4s;
+  }
+  .side-nav ul li a p {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .side-nav ul li .current {
+    width: 20%;
+    border-bottom: solid 1px #fff;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    transform: translateY(0%);
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 680px以下に適用されるCSS（iphone用） */
+@media screen and (max-width: 680px) {
+
+  .center-title h3 {
+    top: 25px;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .main-wrp {
+    margin-top: 100px;
+    padding: 20px 25px 0;
+    max-width: 1200px;
+ }
+
+ .caption {
+  text-align: center;
+  letter-spacing: 5px;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 0%;
+  margin: 25px 0 80px 0;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-700px);
+  transition: all 1.5s;
+  }
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 37px;
+    line-height: 38px;
+    font-weight: lighter;
+  }
+  .contact-caption, .draw-caption {
+    margin: 25px 0 50px 0;
+  }
+
+ .subtitle h2 {
+  margin: 0 auto 30px;
+  font-size: 25px;
+  }
+  .content-wrp {
+    display: block;
+  }
+  .portforio-content-wrp {
+    display: block;
+    margin-bottom: 0;
+  }
+  .portforio {
+    margin-bottom: 100px;
+  }
+  .profile-content {
+    width: 100%;
+    height: 100%;
+  }
+  .profile-content .name h3 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .sentence p {
+    margin: 0;
+  }
+  .myphoto {
+    margin: 25px auto;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .myphoto img {
+    width: 100%;
+  }
+  .profile-wrp, .skill-wrp {
+    height: auto;
+    margin-bottom: 210px;
+    margin-top: 50px;
+  }
+  .pr-wrp {
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 0px;
+  }
+  .content .item-wrp {
+    display: block;
+  }
+  .content .item-wrp .item, .content2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .skill .subtitle h2 {
+    margin-bottom: 30px;
+  }
+  .content .item-wrp .item h4, .content2 .item2 h4, .btn-wrp {
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .btn-wrp {
+    margin-bottom: 20px;
+  }
+  .data p {
+    margin: 10px 0 0 0;
+  }
+
+  .f14 {
+    padding-left: 0px;
+  }
+  .vision {
+    width: auto;
+  }
+  /* .kaigyo {
+    display: inline;
+  } */
+  .self-pr-content .pr-content {
+    margin: 0;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .m-0 {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+  }
+  .m-0 .pr-content {
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .self-pr-content50 .academic {
+    padding-bottom: 20px;
+  }
+
+  footer {
+    width: 100vw;
+    float: none;
+    text-align: center;
+    /* padding-bottom: 10px; */
+    height: auto;
+  }
+  .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+  }
+  .contact-cr{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* .contact-cr {
+    position: static;
+  } */
+
+
+  .masonry {
+    position: relative;
+    margin: 40px 0 100px 0;
+  }
+  .ttl a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .toppage {
+    padding: 0;
+  }
+
+
+
+  .wrap_tbl {
+    margin: 0 auto;
+    width: auto;
+  }
+  .wrap_tbl dl {
+    margin: 0;
+  }
+  .wrap_tbl dt, .wrap_tbl dd {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  input[type="text"], input[type="tel"], input[type="email"] {
+    font-size: 14px;
+    height: 30px;
+  }
+  textarea {
+    font-size: 15px;
+    height: 150px;
+  }
+  .wrap_tbl dd .ex {
+    font-size: 8px;
+  }
+  .wrap_tbl .dd_btn {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+  .ex {
+    display: none;
+  }
+  .wrap_tbl .dd_btn .btn_send {
+    position: static;
+  }
+  form.cmxform label.error, label.error {
+    font-size: 11px;
+  }
+  button, input[type="button"], input[type="submit"], .btn_base {
+    border-bottom: 5px solid #575a61;
+    font-size: 20px;
+  }
+  .contact-footer {
+    width: auto;
+    float: none;
+    /* text-align: center; */
+    padding-bottom: 10px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+
+  .side-nav ul .home-li a .home {
+    font-size: 30px;
+  }
+  .side-nav ul li a p {
+    font-size: 30px;
+    line-height: 30px;
+  } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 400px以下に適用されるCSS（small_iPhone用） */
+@media screen and (max-width: 400px) {
+  .main-wrp {
+    margin-top: 80px;
+    padding: 20px 25px 0;
+    max-width: 1200px;
+  }
+
+  .caption .eigo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    line-height: 38px;
+    font-weight: lighter;
+  }
+
+  .center-title h3 {
+    top: 20px;
+  }
+  .center-title h3 {
+    font-size: 1.0em;
+    font-weight: 400;
+  }
+  .wrap_tbl .dd_btn {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+  }
+  .wrap_tbl dt, .wrap_tbl dd {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  input[type="text"], input[type="tel"], input[type="email"] {
+    font-size: 14px;
+    height: 30px;
+  }
+  textarea {
+    font-size: 12px;
+    height: 140px;
+  }
+  form.cmxform label.error, label.error {
+    font-size: 8px;
+  }
+  button, input[type="button"], input[type="submit"], .btn_base {
+    border-bottom: 5px solid #575a61;
+    /* font-size: 17px; */
+  }
+
+  form {
+    margin: 0 0 80px 0;
+  }
+
+  
+  .caption {
+    margin: 20px 0 50px 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 25px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #dddddd;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .side-nav ul .home-li a .home {
+    font-size: 25px;
+  }
+  .side-nav ul li a p {
+    font-size: 25px;
+    line-height: 25px;
+  } 
+}
+
+/* @media screen and ( max-height:900px) {
+  nav.globalMenuSp ul {
+    padding-top: 20%;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 35px;
+  }
+  .side-nav ul li a p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+@media screen and ( max-height:414px) {
+  nav.globalMenuSp ul {
+    padding-top: 15%;
+  }
+  .side-nav ul .home-li a .home {
+    font-size: 20px;
+  }
+  .side-nav ul li a p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+} */
