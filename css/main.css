@@ -701,6 +701,21 @@ footer {
 }
 
 
+/* .grid {
+  margin-bottom: 1.6em;
+}
+.grid-item {
+  width: 200px;
+}
+.grid-item img {
+  margin: 0;
+  vertical-align: bottom;
+} */
+
+
+
+
 .fade1, .fade2, .fade3, .next-page, .load-fade {
   opacity: 0;
 }
+
