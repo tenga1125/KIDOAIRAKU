@@ -39,7 +39,6 @@ header {
 }
 .center-title {
   display: none;
-  /* opacity: 0; */
 }
 .mini-title {
   z-index: 100;
