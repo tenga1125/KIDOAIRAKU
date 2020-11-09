@@ -1,11 +1,5 @@
 $(function () {
 
-  var exampleDefault = new MiniMasonry({
-    container: '.masonry',
-    baseWidth: 260,
-    gutter: 10,
-  }); 
-
   $('head').append(
     '<style>.fade0{display:none;}'
     );
@@ -81,8 +75,7 @@ $(function () {
     );
     $(window).on("load", function() {
     $('.fade3').css('opacity',1).delay(2000).fadeIn(1000);
-  });
-
+  }); 
 
 
   // メニューカレント表示
@@ -178,6 +171,5 @@ $(function () {
   $(window).on("load", function() {
     $('.caption').addClass('yokoin');
   });
-
 
 });
