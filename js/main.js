@@ -1,5 +1,11 @@
 $(function () {
 
+  var exampleDefault = new MiniMasonry({
+    container: '.masonry',
+    baseWidth: 260,
+    gutter: 10,
+  }); 
+
   $('head').append(
     '<style>.fade0{display:none;}'
     );
@@ -173,18 +179,5 @@ $(function () {
     $('.caption').addClass('yokoin');
   });
 
-
-  // $('#container').imagesLoaded( function() {
-  //   // images have loaded
-  // });
-  
-  // // options
-  // $('#container').imagesLoaded( {
-  //   // options...
-  //   },
-  //   function() {
-  //     // images have loaded
-  //   }
-  // );
 
 });
