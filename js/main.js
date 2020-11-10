@@ -1,4 +1,4 @@
-$(function () {
+// $(function () {
 
   $('head').append(
     '<style>.fade0{display:none;}'
@@ -172,7 +172,7 @@ $(function () {
   });
 
 
-});
+// });
 
 
 
