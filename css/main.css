@@ -683,7 +683,7 @@ footer {
 
 
 /* minmasonry.js */
-/* .masonry {
+.masonry {
   position:relative;
   margin: 70px 0 200px 0;
   }
@@ -697,9 +697,11 @@ footer {
 .masonry a img:hover  { 
   filter: opacity(50%);
   transition: all .2s;
-} */
+}
 
 
+
+/* MagicGrid */
 .container {
   position:relative;
   margin: 70px 0 200px 0;
@@ -716,12 +718,29 @@ footer {
   transition: all .2s;
 }
 
-
-
 .container .item {
   width: 32%;
   height: auto;
 }
+
+
+
+/* MiniMasonry */
+/* .masonry {
+  position:relative;
+  margin: 70px 0 200px 0;
+  }
+.masonry .item {
+  position:absolute;
+  background-color: #fff;
+}
+.masonry a img {
+  display:block;
+}
+.masonry a img:hover  { 
+  filter: opacity(50%);
+  transition: all .2s;
+} */
 
 
 
