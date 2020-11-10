@@ -77,7 +77,6 @@ $(function () {
     $('.fade3').css('opacity',1).delay(2000).fadeIn(1000);
   }); 
 
-
   // メニューカレント表示
   $('nav ul li a').each(function(){
       var $href = $(this).attr('href');
