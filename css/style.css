@@ -8,6 +8,7 @@ body {
   padding: 0;
   color: #FFF;
   background-color: #121212;
+  overflow: hidden;
 }
 
 
@@ -80,6 +81,7 @@ main {
 }
 #section-wrp {
   width: auto;
+  height: 100vh;
   display: flex;
   position: relative;
 }

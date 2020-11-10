@@ -78,13 +78,15 @@
   }); 
 
   // メニューカレント表示
-  $('nav ul li a').each(function(){
-      var $href = $(this).attr('href');
-      if(location.href.match($href)) {
-      $(this).children('.jp').addClass('current');
-      } else {
-      $(this).children('.jp').removeClass('current');
-      }
+  $(function () {
+    $('nav ul li a').each(function(){
+        var $href = $(this).attr('href');
+        if(location.href.match($href)) {
+        $(this).children('.jp').addClass('current');
+        } else {
+        $(this).children('.jp').removeClass('current');
+        }
+    });
   });
 
 
@@ -125,28 +127,34 @@
 
 
   // show moreボタン
-  $(".btn").on("click", function() {
-    $(this).toggleClass("on-click");
-    $(".hide-data").slideToggle(500);
-    $(this).toggleClass('open');
+  $(function () {
+    $(".btn").on("click", function() {
+      $(this).toggleClass("on-click");
+      $(".hide-data").slideToggle(500);
+      $(this).toggleClass('open');
+    });
   });
 
   // トップへ
-  $('.toTop').on('click', function() {
-    $('body, html').animate({ scrollTop: 0 }, 500);
-     return false;
+  $(function () {
+    $('.toTop').on('click', function() {
+      $('body, html').animate({ scrollTop: 0 }, 500);
+       return false;
+    });
   });
 
 
   // ハンバーガーメニュー
-  $('.hamburger').click(function() {
-      $(this).toggleClass('active');
-
-      if ($(this).hasClass('active')) {
-          $('.globalMenuSp').addClass('active');
-      } else {
-          $('.globalMenuSp').removeClass('active');
-      }
+  $(function () {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+  
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
   });
 
 
