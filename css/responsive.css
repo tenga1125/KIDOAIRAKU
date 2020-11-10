@@ -289,6 +289,12 @@
     max-height: 80%;
   }
 
+
+  .container .item {
+    width: 48%;
+    height: auto;
+  }
+
 }
 
 
@@ -632,6 +638,11 @@
     transform: translateY(0%);
   }
 
+  .container .item {
+    width: 48%;
+    height: auto;
+  }
+
 
 }
 
@@ -912,6 +923,11 @@
     font-size: 30px;
     line-height: 30px;
   } 
+
+  .container .item {
+    width: 100%;
+    height: auto;
+  }
 
 }
 
