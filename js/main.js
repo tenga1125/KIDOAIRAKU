@@ -171,4 +171,6 @@ $(function () {
     $('.caption').addClass('yokoin');
   });
 
+
 });
+
