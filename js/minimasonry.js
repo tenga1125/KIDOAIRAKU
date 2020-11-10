@@ -5,7 +5,7 @@ $(function () {
   //   gutter: 10,
   // });
 
-  let magicGrid = new MagicGrid({
+  let magicGrid = new MagicGrid( {
     container: '.container',
     animate: true,
     gutter: 10,
