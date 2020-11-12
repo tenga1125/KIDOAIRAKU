@@ -148,6 +148,11 @@ header {
 }
 
 
+
+.next-page {
+  display: none;
+}
+
 /* メイン */
 
 main {

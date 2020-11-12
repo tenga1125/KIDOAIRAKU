@@ -9,9 +9,9 @@
 
   // TOPページ左から順にスライドイン
   if (window.matchMedia('(min-width: 960px)').matches){
-    $('head').append(
-      '<style>.next-page{display:none;}'
-      );
+    // $('head').append(
+    //   '<style>.next-page{display:none;}'
+    //   );
     $(window).on('load', function(){
       var SlideIn = 200;
       $('.next-page').css('display','inline').each(function(i){
@@ -23,9 +23,9 @@
       });
     });
   } else {
-    $('head').append(
-      '<style>.next-page{display:none;}'
-      );
+    // $('head').append(
+    //   '<style>.next-page{display:none;}'
+    //   );
     $(window).on("load", function() {
       $('.next-page').css('display','inline').delay(1200).fadeIn(1000);
     });
