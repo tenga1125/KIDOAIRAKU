@@ -41,14 +41,14 @@
 
 
 // 仮成功
-  const magicGrid = new MagicGrid({
-    container: '.container',
-    animate: true,
-    gutter: 10,
-    static: true,
-    useMin: true
-  });
-  magicGrid.listen();
+const magicGrid = new MagicGrid({
+  container: '.container',
+  animate: true,
+  gutter: 10,
+  static: true,
+  useMin: true
+});
+magicGrid.listen();
 
 
 // // $(window).on("load", function() {

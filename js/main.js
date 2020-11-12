@@ -10,11 +10,11 @@
   // TOPページ左から順にスライドイン
   if (window.matchMedia('(min-width: 960px)').matches){
     $('head').append(
-      '<style>.next-page{opacity:0;}'
+      '<style>.next-page{display:none;}'
       );
     $(window).on('load', function(){
       var SlideIn = 200;
-      $('.next-page').css('opacity',1).each(function(i){
+      $('.next-page').css('display','inline').each(function(i){
         $(this).delay(i*(SlideIn)).css({
           bottom: outerHeight
         }).animate({
@@ -27,7 +27,7 @@
       '<style>.next-page{display:none;}'
       );
     $(window).on("load", function() {
-      $('.next-page').css('opacity',1).delay(1200).fadeIn(1000);
+      $('.next-page').css('display','inline').delay(1200).fadeIn(1000);
     });
   }
 
