@@ -408,10 +408,10 @@ main {
   }
 }
 @media screen and (max-width: 375px) {
-  /* .cover-img {
+  .cover-img {
     position: absolute;
-    left: -15%;
-  } */
+    left: -30%;
+  }
 }
 @media screen and (max-width: 320px) {
   .cover-img {
