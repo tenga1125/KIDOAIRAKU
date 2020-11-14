@@ -38,7 +38,7 @@ p {
 .slider .slider-li {
   text-align: center;
   list-style: none;
-  display: flex;
+  /* display: flex; */
   vertical-align: middle;
 
 }
