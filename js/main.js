@@ -10,7 +10,7 @@
     '<style>.fade00{display:none;}'
     );
     $(window).on("load", function() {
-    $('.fade00').css('opacity',0.2).delay(800).fadeIn(1000);
+    $('.fade00').css('opacity',0.2).delay(200).fadeIn(1000);
   });
 
   // TOPページ左から順にスライドイン
@@ -32,8 +32,18 @@
   }
 
 
-  $("cover-img").hover(function(){
-      $(this).animate({"opacity":1});
+  // $(".cover-img").hover(function(){
+  //     $(this).animate({"opacity":1});
+  // });
+
+  //マウスを乗せたら発動
+  $('.cover-img').hover(function() {
+    //マウスを乗せたら色が変わる
+    $(this).css({'opacity':1});
+  //ここにはマウスを離したときの動作を記述
+  }, function() {
+    //色指定を空欄にすれば元の色に戻る
+    $(this).css({'opacity':0.2});
   });
     
 
