@@ -6,6 +6,12 @@
     $(window).on("load", function() {
     $('.fade0').css('opacity',1).delay(800).fadeIn(1000);
   });
+  $('head').append(
+    '<style>.fade00{display:none;}'
+    );
+    $(window).on("load", function() {
+    $('.fade00').css('opacity',0.2).delay(800).fadeIn(1000);
+  });
 
   // TOPページ左から順にスライドイン
   if (window.matchMedia('(min-width: 960px)').matches){
