@@ -617,7 +617,7 @@
 
 
 
-/* 400px以下に適用されるCSS（small_iPhone用） */
+/* 480px以下に適用されるCSS（small_iPhone用） */
 @media screen and (max-width: 480px) {
   .center-title h3 {
     top: 25px;
@@ -645,7 +645,7 @@
   .slider .slider-li img {
     width: 95%;
     margin: 0 auto;
-    height: auto;
+    height: 95%;
   }
   .content {
     margin-top: 120px;
